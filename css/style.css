@@ -12,7 +12,7 @@
 .item,
 .describtion,
 .qoute,
-.contact,
+.event,
 .panel,
 .footer,
 body {
@@ -32,8 +32,8 @@ body {
 .header,
 .gallery,
 .qoute,
-.contact {
-    min-width: 780px;
+.event {
+    min-width: 794px;
 }
 
 body{
@@ -83,7 +83,6 @@ a {
 }
 .intro .hero-text  h1 {
     font-size: 52px;
-    font-weight: 900;
     color: #f9faf8;
 }
 .intro .hero-text p {
@@ -116,7 +115,6 @@ a {
 }
 .gallery h2 {
     font-size: 48px;
-    font-weight: 900;
     color: #1F2937;
     margin-bottom: 72px;
 }
@@ -144,7 +142,6 @@ a {
 }
 .item .describtion h4 {
     color: #1F2937;
-    font-weight: 900;
     flex: 1;
 }
 .item .describtion .detail {
@@ -194,13 +191,13 @@ a {
     font-size: 24px;
     font-weight: 900;
 }
-    /* Contact */
-.contact {
+    /* Event */
+.event {
     padding: 112px 356px;
     justify-content: center;
     align-items: center;
 }
-.contact .panel
+.event .panel
 {
     background-color: #3882f6;
     border-radius: 5px;
@@ -217,17 +214,49 @@ a {
 .panel .content .text {
     color: #e5e7eb;
 }
-.contact .panel a {
+.event .panel button {
     font-weight: 600;
     font-size: 16px;
-    color: #f9faf8;
     background-color: #3882f6;
     border: #f9faf8 solid 2px;
     border-radius: 10px;
     padding: 18px 36px;
 } 
+.event .panel a {
+    color: #f9faf8;
+}
 /* #endregion */
 
 /* #region-Footer */
-
+.footer {
+    background-color: #1F2937;
+    min-width: 1331px;
+    padding: 36px 72px;
+    justify-content: flex-end;
+    gap: 72px;
+}
+.footer h1 {
+    color: #f9faf8;
+    font-size: 52px;
+    margin-right: auto;
+    align-self: center;
+}
+.footer .container {
+    background-color: #445166;
+    width: 296px;
+    height: 128px;
+    border-radius: 5px;
+    padding: 18px 36px;
+}
+.container .content h4 {
+    margin-bottom: 12px;
+}
+.container .content a {
+    color: #000;
+    font-size: 36px;
+}
+.container .content p {
+    color: #a9a9a9;
+    font-size: 18px;
+}
 /* endregion */
