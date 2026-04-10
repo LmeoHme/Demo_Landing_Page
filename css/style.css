@@ -10,6 +10,8 @@
 .intro,
 .hero-text,
 .gallery,
+.item,
+.describtion,
 .qoute,
 .contact,
 .footer,
@@ -19,10 +21,23 @@ body {
 
 .header,
 .hero-text,
+.gallery,
+.item,
+.describtion,
 body {
     flex-flow: column;
 }
 
+.header,
+.gallery,
+.qoute,
+.contact {
+    min-width: 780px;
+}
+
+body{
+    height: 100vh;
+}
 ul {
     list-style: none;
     display: flex;
@@ -42,16 +57,14 @@ a {
 }
 .header .container{
     margin-bottom: 56px;
-    gap: 490px;
 }
 
-.container img {
+.header .container img {
     height: 48px;
     width: auto;
 }
-.container ul {
+.header .container ul {
     align-self: flex-start;
-    display: flex;
     justify-content: flex-end;
     gap: 32px;
 }
@@ -92,5 +105,75 @@ a {
 }
 /* #endregion */
 /* #region-Content */
+.gallery {
+    padding: 36px 352px;
+    align-items: center;
+    gap: 36px;
+    flex: 1;
+}
+.gallery h2 {
+    font-size: 42px;
+    font-weight: 900;
+    color: #1F2937;
+}
+.gallery .container {
+    gap: 56px;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.gallery .container .item {
+    padding: 4px 8px;
+    border: #3882f6 solid 2px;
+    border-radius: 10px;
+    width: 212px;
+    height: 362px;
+    flex: 0 0 auto;
+}
+.container .item img {
+    height: 196px;
+    width: auto;
+    margin-bottom: 16px;
+}
+.container .item .describtion {
+    flex: 1;
+    justify-content: flex-end;
+}
+.item .describtion h4 {
+    color: #1F2937;
+    font-weight: 900;
+    flex: 1;
+}
+.container .item ul {
+    background-color: #e5e7eb;
+    padding: 4px 8px;
+    margin-bottom: 12px;
+    flex: 1;
+    flex-flow: wrap;
+    row-gap: 8px;
+    column-gap: 16px;
+}
+.item .describtion .price {
+    flex: 1;
+}
+.describtion .price .original-price {
+    color: #a9a9a9;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.describtion .price .discount-price {
+    color: #f00;
+    font-weight: 900;
+}
+.price .discount-price span {
+    font-weight: 100;
+    border: #f00 solid 1px;
+    border-radius: 2px;
+    padding: 2px 6px;
+    margin-left: 8px;
+}
+
 
 /* #endregion */
+/* #region-Footer */
+/* endregion */
